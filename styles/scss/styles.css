@@ -1,0 +1,227 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+.header__nav {
+  display: none;
+}
+.header__sandwich {
+  font-size: 2rem;
+}
+
+.content {
+  padding-inline: 2rem;
+}
+.content > * {
+  margin-bottom: 1rem;
+}
+.content__title {
+  font-size: 2rem;
+  text-align: end;
+  font-weight: bolder;
+  color: #232C50;
+}
+.content__paraph {
+  text-align: end;
+}
+.content__btn {
+  display: flex;
+  justify-content: end;
+}
+.content__btn button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: #8B48BF;
+}
+
+.about__box {
+  background-color: #3CDDF3;
+  color: white;
+  padding: 2rem;
+}
+.about__box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.about__manage {
+  padding: 2rem 0 2rem 2rem;
+}
+.about__manage__list {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.about__manage__list > * {
+  margin-bottom: 1rem;
+}
+.about__manage__list h3 {
+  display: flex;
+  align-items: center;
+  color: #323851;
+  background-color: rgba(139, 72, 191, 0.3);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-weight: bolder;
+}
+.about__manage__list h3 span {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: #8B48BF;
+  padding-inline: 1rem;
+  margin-right: 1rem;
+}
+.about__manage__list p {
+  padding-right: 1rem;
+  color: #B3B2B7;
+}
+
+.attestation {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+  max-height: 440px;
+  position: relative;
+}
+.attestation__title {
+  color: #242E53;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.attestation__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.attestation__box__profile {
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+.attestation__box__paraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 1rem;
+  color: #B3B2B7;
+}
+.attestation__box__paraph h3 {
+  color: #3F4868;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.attestation__box__paraph p {
+  text-align: center;
+}
+.attestation__btn {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.attestation__btn button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: #8B48BF;
+}
+
+.message {
+  background-color: #3CDDF3;
+  color: white;
+  margin-top: 2.5rem;
+  padding: 2rem;
+}
+.message__box {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.message__btn {
+  display: flex;
+  justify-content: center;
+}
+.message__btn button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: #1E1E26;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  background-color: #1E1E26;
+  color: #B3B2B7;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+.footer__contact {
+  display: flex;
+  justify-content: center;
+}
+.footer__contact input {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: white;
+  padding-left: 0.5rem;
+  padding-right: 4rem;
+  color: #B3B2B7;
+  margin-right: 1rem;
+}
+.footer__contact button {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 0.7rem;
+  background-color: #8B48BF;
+  padding-inline: 1rem;
+}
+.footer__boxList {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footer__boxList ul {
+  margin-inline: 2rem;
+  font-size: 0.8rem;
+}
+.footer__boxList ul li {
+  margin-bottom: 1rem;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+.footer__copyright {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+body {
+  font-family: "be Vietnam Pro";
+}/*# sourceMappingURL=styles.css.map */

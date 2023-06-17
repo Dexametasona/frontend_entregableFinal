@@ -1,0 +1,21 @@
+$fontVietnam:'be Vietnam Pro';
+$colorPrimary:#8B48BF;
+$colorSecondary:#3CDDF3;
+$colorThird:#1E1E26;
+$colorFontSecondary:#B3B2B7;
+
+@function changeOpacity($color,$opacity){
+    $red:red($color);
+    $green:green($color);
+    $blue:blue($color);
+
+    @return rgba($red, $green, $blue, $opacity)
+}
+@mixin btnStyle($color){
+    padding-inline:2rem;
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    color:white;
+    font-size: 0.7rem;
+    background-color: $color;
+}

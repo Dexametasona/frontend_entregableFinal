@@ -1,0 +1,10 @@
+@import 'configuration';
+@import 'header';
+@import 'content';
+@import 'about';
+@import 'attestation';
+@import 'message';
+@import 'footer';
+body{
+    font-family: $fontVietnam;
+}
