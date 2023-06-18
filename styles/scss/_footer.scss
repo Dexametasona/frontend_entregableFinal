@@ -11,21 +11,24 @@
         input{
             @include btnStyle(white);
             padding-left: 0.5rem;
-            padding-right: 4rem;
+            width: 60%;
             color: $colorFontSecondary;
             margin-right: 1rem;
         }
         button {
+            @include animation;
             @include btnStyle($colorPrimary);
             padding-inline: 1rem;
+            &:hover{
+                background-color: changeOpacity($colorPrimary,0.7);
+            }
         }
     }
     &__boxList{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         color: white;
         ul{
-            margin-inline: 2rem;
             font-size: 0.8rem;
             li{
                 margin-bottom: 1rem;
@@ -35,7 +38,13 @@
     &__social{
         display: flex;
         justify-content: space-evenly;
-        color: white; 
+        color: white;
+        &__item{
+            @include animation;
+            &:hover{
+                transform: scale(1.1,1.1);
+            }
+        }
     }
     &__logo{
         display: flex;

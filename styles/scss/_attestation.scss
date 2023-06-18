@@ -5,6 +5,7 @@
     overflow: hidden;
     max-height: 440px;
     position: relative;
+    @include animation;
     &__title{
         color: #242E53;
         font-size: 2rem;
@@ -33,6 +34,7 @@
             }
             p{
                 text-align: center;
+                height: 120px;
             }
         }
     }
@@ -43,7 +45,11 @@
         display: flex;
         justify-content: center;
         button{
-            @include btnStyle($colorPrimary)
+            @include animation;
+            @include btnStyle($colorPrimary);
+            &:hover{
+                background-color: changeOpacity($colorPrimary,0.7);
+            }
         }
     }
 }

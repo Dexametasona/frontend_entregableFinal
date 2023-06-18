@@ -1,14 +1,49 @@
-.header{
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  position: relative;
+  @include animation;
+  z-index: 2;
+  &__nav {
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-inline: 2rem;
-    padding-block: 1rem;
-
-    &__nav{
-        display: none;
+    justify-content: center;
+    background-color: white;
+    
+    left: -100%;
+    top: 72.8px;
+    opacity: 0.9;
+    height: calc(100vh - 72.8px);
+    width: 100vw;
+    @include animation;
+    ul {
+      font-size: 2rem;
+      li {
+        margin-bottom: 2rem;
+      }
     }
-    &__sandwich{
-        font-size: 2rem;
+  }
+  &__sandwich {
+    font-size: 2rem;
+  }
+  &__contact{
+    @include btnStyle($colorPrimary);
+    @include animation;
+    display: none;
+    &:hover{
+      background-color: changeOpacity($colorPrimary, 0.7);
     }
+  }
+}
+.navSlide{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.slide{
+    left: 0%;
 }

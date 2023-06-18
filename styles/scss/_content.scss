@@ -1,22 +1,28 @@
 .content{
     padding-inline: 2rem;
-    &>*{
-        margin-bottom: 1rem;
-    }
-    &__title{
-        font-size: 2rem;
-        text-align: end;
-        font-weight: bolder;
-        color: #232C50;
-    }
-    &__paraph{
-        text-align: end;
-    }
-    &__btn{
-        display: flex;
-        justify-content: end;
-        button{
-            @include btnStyle($colorPrimary)
+    &__box{
+        &>*{
+            margin-bottom: 1rem;
+        }
+        &__title{
+            font-size: 2rem;
+            text-align: end;
+            font-weight: bolder;
+            color: #232C50;
+        }
+        &__paraph{
+            text-align: end;
+        }
+        &__btn{
+            display: flex;
+            justify-content: end;
+            a{
+                @include animation;
+                @include btnStyle($colorPrimary);
+                &:hover{
+                    background-color: changeOpacity($colorPrimary, 0.7);
+                }
+            }
         }
     }
 }

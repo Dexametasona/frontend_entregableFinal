@@ -5,6 +5,11 @@
 @import 'attestation';
 @import 'message';
 @import 'footer';
+@import 'responsive';
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: $fontVietnam;
+    
 }

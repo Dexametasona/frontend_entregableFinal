@@ -1,4 +1,5 @@
 .message{
+    @include animation;
     background-color: $colorSecondary;
     color: white;
     margin-top: 2.5rem;
@@ -12,8 +13,12 @@
         display: flex;
         justify-content: center;
         button{
+            @include animation;
             @include btnStyle($colorThird);
             box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+            &:hover{
+                background-color: changeOpacity($colorThird,0.7);
+            }
         }
     }
 }
