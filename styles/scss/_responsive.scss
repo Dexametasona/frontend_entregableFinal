@@ -163,7 +163,7 @@
         }
     }
 }
-@media screen and (min-width:1000px){
+@media screen and (min-width:1030px){
     .attestation{
         flex-direction: row;
         flex-wrap: wrap;
@@ -175,6 +175,7 @@
         }
         &__box{
             flex-basis: 30%;
+            margin-bottom: 3rem;
         }
         &__btn{
             position: static;

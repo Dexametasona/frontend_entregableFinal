@@ -441,7 +441,7 @@
     color: black;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1030px) {
   .attestation {
     flex-direction: row;
     flex-wrap: wrap;
@@ -454,6 +454,7 @@
   }
   .attestation__box {
     flex-basis: 30%;
+    margin-bottom: 3rem;
   }
   .attestation__btn {
     position: static;
