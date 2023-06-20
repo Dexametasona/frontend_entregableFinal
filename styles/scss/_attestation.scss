@@ -1,55 +1,64 @@
-.attestation{
+.attestation {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow: hidden;
+  max-height: 440px;
+  position: relative;
+  @include animation;
+  &__title {
+    color: #242e53;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__box {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    overflow: hidden;
-    max-height: 440px;
-    position: relative;
-    @include animation;
-    &__title{
-        color: #242E53;
-        font-size: 2rem;
-        font-weight: bolder;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    &__box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__profile{
-            border-radius: 100%;
-            margin-bottom: 2rem;
-        }
-        &__paraph{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-inline: 1rem;
-            color: $colorFontSecondary;
-            h3{
-                color: #3F4868;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-            p{
-                text-align: center;
-                height: 120px;
-            }
-        }
-    }
-    &__btn{
+    align-items: center;
+    &__profile {
+      border-radius: 100%;
+      margin-bottom: 2rem;
+      position: relative;
+      &::before{
         position: absolute;
-        bottom: 0px;
+        content: "hola";
         width: 100%;
-        display: flex;
-        justify-content: center;
-        button{
-            @include animation;
-            @include btnStyle($colorPrimary);
-            &:hover{
-                background-color: changeOpacity($colorPrimary,0.7);
-            }
-        }
+        height: 100%;
+        background-color: changeOpacity($colorThird,0.5);
+        z-index: 2;
+      }
     }
+    &__paraph {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-inline: 1rem;
+      color: $colorFontSecondary;
+      h3 {
+        color: #3f4868;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      p {
+        text-align: center;
+        height: 120px;
+      }
+    }
+  }
+  &__btn {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      @include animation;
+      @include btnStyle($colorPrimary);
+      &:hover {
+        background-color: changeOpacity($colorPrimary, 0.7);
+      }
+    }
+  }
 }

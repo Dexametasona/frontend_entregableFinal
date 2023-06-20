@@ -1,40 +1,40 @@
-.about{
-    &__box{
-        background-color: $colorSecondary;
-        color: white;
-        padding: 2rem;
-        h2{
-            font-size: 1.5rem;
-            font-weight: bolder;
-            margin-bottom: 2rem;
-        }
+.about {
+  &__box {
+    background-color: $colorSecondary;
+    color: white;
+    padding: 2rem;
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 2rem;
     }
-    &__manage{
-        padding: 2rem 0 2rem 2rem;
-        &__list{
-            font-size: 0.8rem;
-            &>*{
-                margin-bottom: 1rem;
-            }
-            margin-bottom: 1rem;
-            h3{
-                display: flex;
-                align-items: center;
-                color: #323851;
-                background-color: changeOpacity($colorPrimary, 0.3);
-                border-top-left-radius: 1rem;
-                border-bottom-left-radius: 1rem;
-                font-weight: bolder;
-                span{
-                    @include btnStyle($colorPrimary);
-                    padding-inline:1rem;
-                    margin-right: 1rem;
-                }
-            }
-            p{
-                padding-right: 1rem;
-                color: $colorFontSecondary;
-            }
+  }
+  &__manage {
+    padding: 2rem 0 2rem 2rem;
+    &__list {
+      font-size: 0.8rem;
+      & > * {
+        margin-bottom: 1rem;
+      }
+      margin-bottom: 1rem;
+      h3 {
+        display: flex;
+        align-items: center;
+        color: #323851;
+        background-color: changeOpacity($colorPrimary, 0.3);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        font-weight: bolder;
+        span {
+          @include btnStyle($colorPrimary);
+          padding-inline: 1rem;
+          margin-right: 1rem;
         }
+      }
+      p {
+        padding-right: 1rem;
+        color: $colorFontSecondary;
+      }
     }
+  }
 }

@@ -1,57 +1,61 @@
-.footer{
-    background-color: $colorThird;
-    color: $colorFontSecondary;
+.footer {
+  background-color: $colorThird;
+  color: $colorFontSecondary;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2rem;
+  &__contact {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-block: 2rem;
-    &__contact{
-        display: flex;
-        justify-content: center;
-        input{
-            @include btnStyle(white);
-            padding-left: 0.5rem;
-            width: 60%;
-            color: $colorFontSecondary;
-            margin-right: 1rem;
-        }
-        button {
-            @include animation;
-            @include btnStyle($colorPrimary);
-            padding-inline: 1rem;
-            &:hover{
-                background-color: changeOpacity($colorPrimary,0.7);
-            }
-        }
+    justify-content: center;
+    input {
+      @include btnStyle(white);
+      cursor: auto;
+      padding-left: 0.5rem;
+      width: 60%;
+      color: $colorFontSecondary;
+      margin-right: 1rem;
+      &:focus{
+        outline: solid $colorPrimary 2px;
+      }
     }
-    &__boxList{
-        display: flex;
-        justify-content: space-evenly;
-        color: white;
-        ul{
-            font-size: 0.8rem;
-            li{
-                margin-bottom: 1rem;
-            }
-        }
+    button {
+      @include animation;
+      @include btnStyle($colorPrimary);
+      padding-inline: 1rem;
+      &:hover {
+        background-color: changeOpacity($colorPrimary, 0.7);
+      }
     }
-    &__social{
-        display: flex;
-        justify-content: space-evenly;
-        color: white;
-        &__item{
-            @include animation;
-            &:hover{
-                transform: scale(1.1,1.1);
-            }
-        }
+  }
+  &__boxList {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    ul {
+      font-size: 0.8rem;
+      li {
+        margin-bottom: 1rem;
+      }
     }
-    &__logo{
-        display: flex;
-        justify-content: center;
+  }
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    &__item {
+      @include animation;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
     }
-    &__copyright{
-        text-align: center;
-        font-size: 0.5rem;
-    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+  }
+  &__copyright {
+    text-align: center;
+    font-size: 0.5rem;
+  }
 }
